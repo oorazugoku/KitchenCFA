@@ -1,6 +1,6 @@
 import DonateButton from '@/components/donate';
 import { useEffect, useState } from 'react';
-import { fetchAllData } from './api/blizzardAPI';
+import { fetchAllData } from './api/kitchenAPI';
 import BasicModal from '../components/modal/Modal';
 import { Button } from '@mui/material';
 import Fade from '@mui/material/Fade';
@@ -26,8 +26,6 @@ const Home = ({ data }: Props) => {
   }, [data]);
 
 
-
-
   return (
     <>
 
@@ -41,4 +39,3 @@ export const getServerSideProps = async () => {
 }
 
 export default Home;
-
